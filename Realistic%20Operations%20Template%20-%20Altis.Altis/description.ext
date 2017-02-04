@@ -17,7 +17,7 @@ respawn = "BASE";
 respawnOnStart = 0;
 
 class Params {
-    class gap5
+		class gap5
     {
       title = "";
       values[] = {0};
@@ -41,7 +41,7 @@ class Params {
     };
     class ace_map_mapShake {
         title = "Enable map shake when walking";
-        ACE_setting = 0;
+        ACE_setting = 1;
         values[] = {0, 1};
         texts[] =  {"False", "True"};
         default = 0;
@@ -69,7 +69,7 @@ class Params {
     };
     class ace_advanced_ballistics_enabled {
         title = "Enable advanced ballistics";
-        ACE_setting = 0;
+        ACE_setting = 1;
         values[] = {0, 1};
         texts[] =  {"False", "True"};
         default = 0;
@@ -120,14 +120,14 @@ class Params {
     };
     class ace_medical_maxReviveTime {
         title = "Max revive time";
-        ACE_setting = 240;
+        ACE_setting = 1;
         values[] = {60, 120, 240, 300};
         texts[] =  {"1 min", "2 min", "4 min", "5 min"};
         default = 240;
     };
     class medical_medicSetting_basicEpi {
         title = "Enable epipen only for medics";
-        ACE_setting = 0;
+        ACE_setting = 1;
         values[] = {0, 1};
         texts[] =  {"False", "True"};
         default = 0;
@@ -169,127 +169,186 @@ class Params {
         default = 1;
     };
     class ace_advanced_fatigue_performanceFactor {
-        title = "Loadout performance factor (higher is better)";
-        ACE_setting = 2;
+        title = "Unit performance multiplier (higher is better)";
+        ACE_setting = 1;
         values[] = {0, 0.5, 1, 1.5, 2, 2.5, 3};
         texts[] =  {"0", "0.5", "1", "1.5", "2", "2.5", "3"};
         default = 2;
     };
     class ace_advanced_fatigue_recoveryFactor {
-        title = "Recovery factor (higher is better)";
-        ACE_setting = 10;
-        values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        texts[] =  {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
-        default = 10;
+        title = "Recovery multiplier (higher is better)";
+        ACE_setting = 1;
+        values[] = {1, 2, 4, 8, 16};
+        texts[] =  {"1", "2", "4", "8", "16",};
+        default = 8;
     };
     class ace_advanced_fatigue_loadFactor {
         title = "Percentage of packing weight that impacts fatigue (0 is no impact)";
-        ACE_setting = 0;
+        ACE_setting = 1;
         values[] = {0, 0.25, 0.5, 0.75, 1, 1.5};
         texts[] =  {"0", "25%", "50%", "75%", "100%", "150%"};
         default = 0;
     };
     class ace_advanced_fatigue_terrainGradientFactor {
       title = "Percentage of terrain gradient that impacts fatigue (0 is no impact)";
-      ACE_setting = 0;
+      ACE_setting = 1;
       values[] = {0, 0.25, 0.5, 0.75, 1, 1.5};
       texts[] =  {"0", "25%", "50%", "75%", "100%", "150%"};
       default = 0;
-  };
+  	};
+		class gap7
+		{
+			title = "";
+			values[] = {0};
+			texts[] = {""};
+			default = 0;
+		};
+
+		class gap8
+		{
+			title = "";
+			values[] = {0};
+			texts[] = {""};
+			default = 0;
+		}
+		class title4
+		{
+			title = "------------ Ace3 View Restriction settings ------------";
+			values[] = {0};
+			texts[] = {""};
+			default = 0;
+		};
+		class acex_viewrestriction_mode {
+      title = "View Restriction Mode";
+      ACE_setting = 1;
+      values[] = {0, 1, 2, 3};
+      texts[] =  {"Disabled", "Forced 1st person", "Forced 3rd person", "Selective"};
+      default = 0;
+  	};
+		class acex_viewrestriction_modeSelectiveFoot {
+			title = "Selective Foot";
+			ACE_setting = 1;
+			values[] = {0, 1, 2};
+			texts[] =  {"Disabled", "Forced 1st person", "Forced 3rd person"};
+			default = 0;
+		};
+		class acex_viewrestriction_modeSelectiveLand {
+			title = "Selective Land";
+			ACE_setting = 1;
+			values[] = {0, 1, 2};
+			texts[] =  {"Disabled", "Forced 1st person", "Forced 3rd person"};
+			default = 0;
+		};
+		class acex_viewrestriction_modeSelectiveAir {
+			title = "Selective Air";
+			ACE_setting = 1;
+			values[] = {0, 1, 2};
+			texts[] =  {"Disabled", "Forced 1st person", "Forced 3rd person"};
+			default = 0;
+		};
+		class acex_viewrestriction_modeSelectiveSea {
+			title = "Selective Sea";
+			ACE_setting = 1;
+			values[] = {0, 1, 2};
+			texts[] =  {"Disabled", "Forced 1st person", "Forced 3rd person"};
+			default = 0;
+		};
 };
 
-class ace_interact_menu_alwaysUseCursorSelfInteraction {
-    value = 1;
-    typeName = "BOOL";
-    force = 1;
-};
-class ace_interact_menu_cursorKeepCentered {
-    value = 0;
-    typeName = "BOOL";
-    force = 1;
-};
-class ace_interact_menu_alwaysUseCursorInteraction {
-    value = 1;
-    typeName = "BOOL";
-    force = 1;
-};
-class ace_interact_menu_useListMenu {
-    value = 1;
-    typeName = "BOOL";
-    force = 1;
-};
-class ace_interact_menu_colorTextMax {
-    value[] = {1, 1, 1, 1};
-    typeName = "COLOR";
-    force = 1;
-};
-class ace_interact_menu_colorTextMin {
-    value[] = {1, 1, 1, 0.25};
-    typeName = "COLOR";
-    force = 1;
-};
-class ace_interact_menu_colorShadowMax {
-    value[] = {0, 0, 0, 1};
-    typeName = "COLOR";
-    force = 1;
-};
-class ace_interact_menu_colorShadowMin {
-    value[] = {0, 0, 0, 0.25};
-    typeName = "COLOR";
-    force = 1;
-};
-class ace_interact_menu_textSize {
-    value = 2;
-    typeName = "SCALAR";
-    force = 1;
-};
-class ace_interact_menu_shadowSetting {
-    value = 2;
-    typeName = "SCALAR";
-    force = 1;
-};
-class ace_interact_menu_actionOnKeyRelease {
-    value = 1;
-    typeName = "BOOL";
-    force = 1;
-};
-class ace_interact_menu_menuBackground {
-    value = 0;
-    typeName = "SCALAR";
-    force = 1;
-};
-class ace_interact_menu_addBuildingActions {
-    value = 0;
-    typeName = "BOOL";
-    force = 1;
-};
-class ace_interact_menu_menuAnimationSpeed {
-    value = 0;
-    typeName = "SCALAR";
-    force = 1;
-};
-class ace_interaction_enableTeamManagement {
-    value = 1;
-    typeName = "BOOL";
-    force = 1;
-};
-class ace_interaction_enableMagazinePassing {
-    value = 1;
-    typeName = "BOOL";
-    force = 1;
-};
-class ace_inventory_inventoryDisplaySize {
-    value = 0;
-    typeName = "SCALAR";
-    force = 1;
-};
-class ace_hearing_earplugsVolume {
-    value = 0.3;
-    typeName = "SCALAR";
-    force = 1;
-};
-class ace_hearing_autoAddEarplugsToUnits {
-    value = 1;
-    typeName = "BOOL";
-    force = 1;
+class ACE_Settings {
+	class ace_interact_menu_alwaysUseCursorSelfInteraction {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_interact_menu_cursorKeepCentered {
+	    value = 0;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_interact_menu_alwaysUseCursorInteraction {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_interact_menu_useListMenu {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_interact_menu_colorTextMax {
+	    value[] = {1, 1, 1, 1};
+	    typeName = "COLOR";
+	    force = 1;
+	};
+	class ace_interact_menu_colorTextMin {
+	    value[] = {1, 1, 1, 0.25};
+	    typeName = "COLOR";
+	    force = 1;
+	};
+	class ace_interact_menu_colorShadowMax {
+	    value[] = {0, 0, 0, 1};
+	    typeName = "COLOR";
+	    force = 1;
+	};
+	class ace_interact_menu_colorShadowMin {
+	    value[] = {0, 0, 0, 0.25};
+	    typeName = "COLOR";
+	    force = 1;
+	};
+	class ace_interact_menu_textSize {
+	    value = 2;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_interact_menu_shadowSetting {
+	    value = 2;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_interact_menu_actionOnKeyRelease {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_interact_menu_menuBackground {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_interact_menu_addBuildingActions {
+	    value = 0;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_interact_menu_menuAnimationSpeed {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_interaction_enableTeamManagement {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_interaction_enableMagazinePassing {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_inventory_inventoryDisplaySize {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_hearing_earplugsVolume {
+	    value = 0.3;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_hearing_autoAddEarplugsToUnits {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
 };
