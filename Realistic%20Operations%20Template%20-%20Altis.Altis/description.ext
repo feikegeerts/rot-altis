@@ -9,7 +9,8 @@ author = "Voika";
 overviewText = "This template can be used to generate your own missions using MCC or create one using Zeus. You can use the parameter button in the loadout screen before you start the mission to tweak some of the Ace3 settings.";
 OnLoadName = "Realistic Operations Template - Altis";
 OnLoadMission = "Generate your own realistic Ace3 missions using MCC, or create one using Zeus.";
-
+loadScreen = "images\loadingScreen.jpg";
+overviewPicture = "images\loadingScreen.jpg";
 
 ReviveUnconsciousStateMode = 0;
 respawn = "BASE";
