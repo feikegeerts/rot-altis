@@ -11,10 +11,10 @@ Next open up the generate mission screen. In this screen you can configure all t
 Some Ace3 parameters can be configured by the server host by tweaking the parameters in the chose loadout screen. This can only be done before the mission has started. More configuration options in the parameter menu will be added per request via steam.
 
 ## Additional recommended mods (not obligatory)
-- (Task Force Radio)[http://steamcommunity.com/sharedfiles/filedetails/?id=620019431]
+- [Task Force Radio](http://steamcommunity.com/sharedfiles/filedetails/?id=620019431)
 - [Ares Mod - Achilles Expansion](http://steamcommunity.com/sharedfiles/filedetails/?id=723217262)
-- RHS[http://steamcommunity.com/id/rhsmods/myworkshopfiles/?appid=107410]
-- ACE RHS Compatibility files[http://steamcommunity.com/id/acemod/myworkshopfiles/?appid=107410]
+- [RHS](http://steamcommunity.com/id/rhsmods/myworkshopfiles/?appid=107410)
+- [ACE RHS Compatibility files](http://steamcommunity.com/id/acemod/myworkshopfiles/?appid=107410)
 
 ## Source files
 You can check out the source files of this mission at:
