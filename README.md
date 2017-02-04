@@ -17,6 +17,5 @@ Some Ace3 parameters can be configured by the server host by tweaking the parame
 - [ACE RHS Compatibility files](http://steamcommunity.com/id/acemod/myworkshopfiles/?appid=107410)
 
 ## Source files
-You can check out the source files of this mission at:
-https://github.com/feikegeerts/rot-altis
-Your free to use whatever you want from these files in your own missions.
+You can check out the source files of this mission at my [github](https://github.com/feikegeerts/rot-altis).
+Feel free to copy stuff into your own mission. 
