@@ -12,7 +12,7 @@ Some Ace3 parameters can be configured by the server host by tweaking the parame
 
 ## Additional recommended mods (not obligatory)
 - (Task Force Radio)[http://steamcommunity.com/sharedfiles/filedetails/?id=620019431]
-- Ares Mod - Achilles Expansion [http://steamcommunity.com/sharedfiles/filedetails/?id=723217262]
+- [Ares Mod - Achilles Expansion](http://steamcommunity.com/sharedfiles/filedetails/?id=723217262)
 - RHS[http://steamcommunity.com/id/rhsmods/myworkshopfiles/?appid=107410]
 - ACE RHS Compatibility files[http://steamcommunity.com/id/acemod/myworkshopfiles/?appid=107410]
 
