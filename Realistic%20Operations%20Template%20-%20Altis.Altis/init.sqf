@@ -1,1 +1,1 @@
-_cthread = [] execVM "scripts\MainThreadC.sqf";
+_cthread = [] execVM "scripts\farp.sqf";

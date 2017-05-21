@@ -1,4 +1,4 @@
-//scripts\MainThreadC.sqf
+//scripts\farp.sqf
 EGG_EVO_Repair =
 {
 	_vec = (vehicle player);
