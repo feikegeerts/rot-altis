@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1713;
+		nextID=1778;
 	};
 	class Camera
 	{
@@ -123,10 +123,8 @@ addons[]=
 	"A3_Characters_F_Mark",
 	"ace_gforces",
 	"A3_Weapons_F_Pistols_ACPC2",
-	"JSRS_SOUNDMOD_ReloadingSounds",
 	"A3_Weapons_F",
 	"ace_smallarms",
-	"achilles_data_f_ares",
 	"ace_goggles",
 	"ace_hearing",
 	"ace_attach",
@@ -7776,7 +7774,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{""this setUnitTrait ['derp_AT', true, true]"";}";
+						init="call{this setUnitTrait ['derp_AT', true, true];}";
 						description="AT Soldier";
 						isPlayable=1;
 					};
@@ -7895,7 +7893,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{""this setUnitTrait ['derp_AT', true, true]"";}";
+						init="call{this setUnitTrait ['derp_AT', true, true];}";
 						description="AT Soldier";
 						isPlayable=1;
 					};
@@ -8251,7 +8249,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{""this setUnitTrait ['derp_marksman', true, true]"";}";
+						init="call{this setUnitTrait ['derp_marksman', true, true];}";
 						description="Marksman";
 						isPlayable=1;
 					};
@@ -8369,7 +8367,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{""this setUnitTrait ['derp_marksman', true, true]"";}";
+						init="call{this setUnitTrait ['derp_marksman', true, true];}";
 						description="Marksman";
 						isPlayable=1;
 					};
@@ -9665,6 +9663,7 @@ class Mission
 			};
 			id=17063;
 			type="B_Heli_Transport_03_unarmed_F";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15937,7 +15936,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{""this setUnitTrait ['derp_pilot', true, true]"";}";
+						init="call{this setUnitTrait ['derp_pilot', true, true];}";
 						description="Helicopter Pilot";
 						isPlayable=1;
 					};
@@ -16075,7 +16074,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{""this setUnitTrait ['derp_pilot', true, true]"";}";
+						init="call{this setUnitTrait ['derp_pilot', true, true];}";
 						description="Helicopter Pilot";
 						isPlayable=1;
 					};
@@ -16205,19 +16204,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10066.727,12.437247,12186.779};
+						position[]={10066.727,12.43725,12186.78};
 						angles[]={0,5.0176125,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						init="call{""this setUnitTrait ['derp_pilot', true, true]"";}";
+						init="call{this setUnitTrait ['derp_pilot', true, true];}";
 						description="Helicopter Pilot";
 						isPlayable=1;
 					};
 					id=19231;
 					type="B_Helipilot_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16349,7 +16349,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{""this setUnitTrait ['derp_pilot', true, true]"";}";
+						init="call{this setUnitTrait ['derp_pilot', true, true];}";
 						description="Fixed Wing Pilot";
 						isPlayable=1;
 						class Inventory
@@ -16604,7 +16604,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{""this setUnitTrait ['derp_pilot', true, true]"";}";
+						init="call{this setUnitTrait ['derp_pilot', true, true];}";
 						description="Fixed Wing Pilot";
 						isPlayable=1;
 						class Inventory
@@ -16858,7 +16858,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{""this setUnitTrait ['derp_uavOperator', true, true]"";}";
+						init="call{this setUnitTrait ['derp_uavOperator', true, true];}";
 						description="UAV Operator";
 						isPlayable=1;
 					};
